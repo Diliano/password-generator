@@ -44,3 +44,43 @@ span {
     margin-top: -15px;
     margin-left: 50px;
 }
+
+#generate-password-btn {
+    margin-left: 50px;
+    background: #10B981;
+    padding: 10px 15px;
+    font-size: 16px; 
+    font-weight: 500; 
+    line-height: 25px;
+    color: #FFFFFF;
+    border-radius: 6px; 
+    border: none;
+    margin-top: 30px;
+}
+
+hr {
+    width: 445px;
+    border-color: #6c757d;
+    margin-top: 30px;
+}
+
+.password-btn {
+    margin-top: 35px;
+    width: 210px;
+    height: 39px;
+    border-radius: 6px;
+    border: none;
+    background: #273549;
+    font-size: 16px; 
+    font-weight: 500; 
+    line-height: 32px;  
+    color: #55F991;  
+}
+
+#password-one {
+    margin-left: 50px;
+}
+
+#password-two {
+    margin-left: 25px;
+}
