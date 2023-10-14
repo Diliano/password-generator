@@ -57,6 +57,11 @@ span {
     border-radius: 6px; 
     border: none;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+#generate-passwords-btn:hover {
+    opacity: 0.8;
 }
 
 hr {
@@ -75,7 +80,12 @@ hr {
     font-size: 16px; 
     font-weight: 500; 
     line-height: 32px;  
-    color: #55F991;  
+    color: #55F991;
+    cursor: pointer;  
+}
+
+.password-btn:hover {
+    opacity: 0.5;
 }
 
 #password-one {
