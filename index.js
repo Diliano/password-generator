@@ -8,8 +8,10 @@ let generatePasswordsButton = document.getElementById("generate-passwords-btn");
 generatePasswordsButton.addEventListener("click", function() {
     passwordOneEl.textContent = "";
     passwordTwoEl.textContent = "";
+
+    let selectedLength = document.getElementById("lengths").value;
     
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < selectedLength; i++) {
         let randomIndexOne = Math.floor(Math.random() * characters.length);
         let randomIndexTwo = Math.floor(Math.random() * characters.length);
         passwordOneEl.textContent += characters[randomIndexOne];
