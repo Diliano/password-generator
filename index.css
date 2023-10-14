@@ -64,6 +64,19 @@ span {
     opacity: 0.8;
 }
 
+#customisation-container {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.dropdown {
+    background: #10B981;
+    border-radius: 6px; 
+    border: none;
+    color: #FFFFFF;
+    margin-right: 30px;
+}
+
 hr {
     width: 445px;
     border-color: #6c757d;

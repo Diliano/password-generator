@@ -7,6 +7,29 @@
             <h1 id="header">Generate a <span>random password</span></h1>
             <h3 id="description">Never use an insecure password again.</h3>
             <button id="generate-passwords-btn">Generate passwords</button>
+            <div id="customisation-container">
+                <label for="lengths">Length:</label>
+                <select name="lengths" id="lengths" class="dropdown">
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15" selected>15</option>
+                </select>
+                <label for="numbers">Numbers:</label>
+                <select name="numbers" id="numbers" class="dropdown">
+                    <option value="on">On</option>
+                    <option value="off">Off</option>
+                </select>
+                <label for="symbols">Symbols:</label>
+                <select name="symbols" id="symbols" class="dropdown">
+                    <option value="on">On</option>
+                    <option value="off">Off</option>
+                </select>
+            </div>
             <hr>
             <button class="password-btn" id="password-one" title="Click to copy"></button>
             <button class="password-btn" id="password-two" title="Click to copy"></button>
