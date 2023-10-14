@@ -13,8 +13,19 @@ let generatePasswordsButton = document.getElementById("generate-passwords-btn");
 generatePasswordsButton.addEventListener("click", function() {
     passwordOneEl.textContent = "";
     passwordTwoEl.textContent = "";
+    characters = letters;
 
     let selectedLength = document.getElementById("lengths").value;
+    let includeNumbers = document.getElementById("numbers").value;
+    let includeSymbols = document.getElementById("symbols").value;
+
+    if (includeNumbers === "on") {
+        characters = letters.concat(numbers);
+    }   
+    
+    if (includeSymbols === "on") {
+        characters = characters.concat(symbols);
+    }
     
     for (let i = 0; i < selectedLength; i++) {
         let randomIndexOne = Math.floor(Math.random() * characters.length);
