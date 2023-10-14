@@ -17,24 +17,21 @@ generatePasswordsButton.addEventListener("click", function() {
     }
 });
 
-passwordOneEl.addEventListener("click", function() {
-    let passwordOne = passwordOneEl.textContent;
-    navigator.clipboard.writeText(passwordOne);
-    
-    passwordOneEl.textContent = "Copied!";
+function copyPassword(passwordEl) {
+    let password = passwordEl.textContent;
+    navigator.clipboard.writeText(password);
+
+    passwordEl.textContent = "Copied!";
 
     setTimeout(function() {
-        passwordOneEl.textContent = passwordOne;
+        passwordEl.textContent = password;
     }, 2000);
+}
+
+passwordOneEl.addEventListener("click", function() {
+    copyPassword(passwordOneEl);
 });
 
 passwordTwoEl.addEventListener("click", function() {
-    let passwordTwo = passwordTwoEl.textContent;
-    navigator.clipboard.writeText(passwordTwo);
-    
-    passwordTwoEl.textContent = "Copied!";
-
-    setTimeout(function() {
-        passwordTwoEl.textContent = passwordTwo;
-    }, 2000);
+    copyPassword(passwordTwoEl);
 });
