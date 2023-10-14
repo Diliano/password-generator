@@ -27,3 +27,14 @@ passwordOneEl.addEventListener("click", function() {
         passwordOneEl.textContent = passwordOne;
     }, 2000);
 });
+
+passwordTwoEl.addEventListener("click", function() {
+    let passwordTwo = passwordTwoEl.textContent;
+    navigator.clipboard.writeText(passwordTwo);
+    
+    passwordTwoEl.textContent = "Copied!";
+
+    setTimeout(function() {
+        passwordTwoEl.textContent = passwordTwo;
+    }, 2000);
+});
