@@ -15,4 +15,15 @@ generatePasswordsButton.addEventListener("click", function() {
         passwordOneEl.textContent += characters[randomIndexOne];
         passwordTwoEl.textContent += characters[randomIndexTwo];
     }
-})
+});
+
+passwordOneEl.addEventListener("click", function() {
+    let passwordOne = passwordOneEl.textContent;
+    navigator.clipboard.writeText(passwordOne);
+    
+    passwordOneEl.textContent = "Copied!";
+
+    setTimeout(function() {
+        passwordOneEl.textContent = passwordOne;
+    }, 2000);
+});
