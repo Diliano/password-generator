@@ -20,7 +20,7 @@ generatePasswordsButton.addEventListener("click", function() {
     let includeSymbols = document.getElementById("symbols").value;
 
     if (includeNumbers === "on") {
-        characters = letters.concat(numbers);
+        characters = characters.concat(numbers);
     }   
     
     if (includeSymbols === "on") {
